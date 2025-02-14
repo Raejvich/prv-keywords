@@ -9,7 +9,7 @@ nltk.download("wordnet")
 
 def clean_text(full_text):
     # Remove special characters and keep hyphens
-    cleaned_text = re.sub(r"[^a-zA-Z0-9\s-]", "", full_text)
+    cleaned_text = re.sub(r"[^a-zA-Z\s-]", "", full_text)
     # lowercase
     cleaned_text = cleaned_text.lower()
     # tokenize with 2-gram
