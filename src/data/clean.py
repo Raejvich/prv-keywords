@@ -2,6 +2,9 @@ import re
 from itertools import tee
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
+import nltk
+
+nltk.download("wordnet")
 
 
 def clean_text(full_text):
@@ -87,6 +90,6 @@ def generate_ngrams(text, n=2):
 
 
 if __name__ == "__main__":
-    text = "This is an runs example text! non-keywords are not considered?"
+    text = "This is an runs example text! non-keywords (52) are not considered?"
     cleaned_text = clean_text(text)
     print(cleaned_text)

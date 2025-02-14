@@ -61,5 +61,7 @@ def read_application(file_path: str) -> str:
 
 
 if __name__ == "__main__":
-    file_path = r"C:\Users\patgjoh\Desktop\exjobb\fulltext_en\SE539880C2.xml"
+    file_path = r"C:\Users\Gustav\Desktop\exjobb\fulltext_en\SE539880C2.xml"
     raw_text = read_application(file_path)
+
+    print(raw_text)
